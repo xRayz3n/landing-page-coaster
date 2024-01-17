@@ -25,7 +25,7 @@
           <div class="banner">
             <h2>Start your day with your favorite drink on</h2>
             <h1>Mozaïk</h1>
-            <a href="#" target="_blank" class="button-preorder">Pre-order</a>
+            <a href="https://www.kickstarter.com/projects/1651422321/358691798?ref=6lc0ac&token=69fb45bd" target="_blank" class="button-preorder">Pre-order</a>
           </div>
         </div>
       </section>
@@ -71,13 +71,15 @@
             <label for="name">Name*</label>
             <input
               type="text"
+              required
               name="name"
               placeholder="Type your name"
               id="input-name"
             />
             <label for="name">E-mail adress*</label>
             <input
-              type="text"
+              type="email"
+              required
               name="email"
               placeholder="Type your e-mail address"
               id="input-mail"
@@ -90,22 +92,30 @@
               id="input-title"
             />
             <label for="name">Message</label>
-            <input
+            <textarea
               type="text"
               name="message"
               placeholder="Type your message here..."
               id="input-message"
-            />
+              rows="5"
+            ></textarea>
             <input type="submit" value="Submit" />
           </form>
       </section>
+      <section class="newsletter">
+        <h2>Subscribe form</h2>
+        <form action="https://formspree.io/f/mpzvwkwa" method="post">
+            <input name="email" required type="email" placeholder="eg., email@example.com" id="">
+            <input type="submit" value="Join">
+        </form>
+    </section>
     </main>
+    <footer>
+        <h4>Mozaïk</h4>
+        <a href="mailto:mozaik.coaster@gmail.com">mozaik.coaster@gmail.com</a>
+        <p>© 2024 par Basile MAILLE.</p>
+    </footer>
 
-    
-    <form action="https://formspree.io/f/mpzvwkwa" method="post">
-        <input name="email" type="text" placeholder="newsletter" id="">
-        <input type="submit" value="Submit">
-    </form>
 
     <script src="script.js"></script>
   </body>
