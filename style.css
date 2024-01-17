@@ -1,7 +1,183 @@
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --brown: 37, 24, 12;
+    --beige: 202, 167, 125;
+}
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(var(--beige));
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: rgb(var(--brown));
+    width: 100vw;
 }
 
-/*# sourceMappingURL=style.css.map */
+header{
+    width: 100%;
+}
+nav {
+    padding: 1% 10%;
+    width: 100%;
+    position: fixed;
+    background-color: rgb(var(--brown));
+}
+
+.logo-asset {
+    height: 4.5rem;
+}
+main {
+    padding-top: 6.5%;
+}
+.hero {
+    width: 100%;
+}
+.background {
+    background-image: url('./public/images/hero-bg.png');
+    padding: 13rem 0;
+}
+.banner {
+    background-color: rgba(var(--brown), 0.9);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: rgb(var(--beige));
+    padding: 5rem 0;
+    gap: 1rem;
+}
+.banner h2{
+    font-weight: 200;
+    text-align: center;
+}
+h1 {
+    font-weight: 300;
+    font-size: 4.5rem;
+}
+
+.button-preorder {
+    border: 2px solid rgb(var(--beige)) ;
+    color: rgb(var(--beige));
+    padding: 1rem 2rem;
+    transition: all .2s ease-in;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.button-preorder:hover {
+    background-color: rgb(var(--beige));
+    color: rgb(var(--brown));
+}
+.about-us {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%
+}
+.about-us img {
+    width:100%;
+}
+.about-txt {
+    background-color: rgb(var(--beige));
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.about-txt h2 {
+    font-family: sans-serif;
+    font-size: 3rem;
+    color: rgb(var(--brown));
+    font-weight: 700;
+}
+.about-txt p {
+    color: rgb(var(--brown));
+    width: 50%;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+.medias {
+    width: 100%;
+    display:flex;
+    gap: 2px
+}
+.grid {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 2px;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.column img:first-of-type {
+    height: 30%;
+}
+.column img:last-of-type {
+    height: 70%;
+}
+
+.reverse {
+    flex-direction: column-reverse;
+}
+
+.medias img {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.contact {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+.contact h2 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin:0 auto;
+    margin-top: 2re;
+}
+.contact-form input {
+    margin-bottom: 2rem;
+}
+.contact-form input {
+    padding: 1rem 2rem;
+    background-color: rgb(var(--brown));
+    border: 1px solid rgb(var(--beige));
+}
+.contact-form input::placeholder {
+    color: rgb(var(--beige));
+    font-size: 1rem;
+}
+.contact-form label {
+    margin-bottom: 5px;
+}
+.contact-form input[type=submit] {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border: 2px solid rgb(var(--beige)) ;
+    color: rgb(var(--beige));
+    transition: all .2s ease-out;
+}
+.contact-form input[type=submit]:hover{
+    background-color: rgb(var(--beige));
+    color: rgb(var(--brown));
+}

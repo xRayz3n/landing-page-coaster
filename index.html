@@ -1,15 +1,112 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img
+            src="./public/images/Asset 1.svg"
+            class="logo-asset"
+            alt="Mosaïk logo"
+          />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="background">
+          <div class="banner">
+            <h2>Start your day with your favorite drink on</h2>
+            <h1>Mozaïk</h1>
+            <a href="#" target="_blank" class="button-preorder">Pre-order</a>
+          </div>
+        </div>
+      </section>
+      <section class="about-us">
+        <div class="about-img">
+          <img src="./public/images/about-us.jpg" alt="3 coasters" />
+        </div>
+        <div class="about-txt">
+          <h2>About us</h2>
+          <p>
+            We are a dedicated team of engineering students passionately engaged
+            in the art of sophisticated design with a strong commitment to
+            eco-conscious practices, encompassing recycling and upcycling as our
+            main goal.
+          </p>
+        </div>
+      </section>
+      <section class="medias">
+        <div class="grid">
+          <div class="column">
+            <img src="./public/images/grid/grid-1-1.jpg" alt="Coaster" />
+            <img src="./public/images/grid/grid-1-1.jpg" alt="Coaster" />
+          </div>
+          <div class="column reverse">
+            <img src="./public/images/grid/grid-1-1.jpg" alt="Coaster" />
+            <img src="./public/images/grid/grid-1-1.jpg" alt="Coaster" />
+          </div>
+        </div>
+        <div class="grid">
+          <div class="column">
+            <img src="./public/images/grid/grid-1-1.jpg" alt="Coaster" />
+            <img src="./public/images/grid/grid-1-1.jpg" alt="Coaster" />
+          </div>
+          <div class="column reverse">
+            <img src="./public/images/grid/grid-1-1.jpg" alt="Coaster" />
+            <img src="./public/images/grid/grid-1-1.jpg" alt="Coaster" />
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <h2>Contact us</h2>
+        <form class="contact-form" method="POST" action="https://formspree.io/f/meqyoryg">
+            <label for="name">Name*</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Type your name"
+              id="input-name"
+            />
+            <label for="name">E-mail adress*</label>
+            <input
+              type="text"
+              name="email"
+              placeholder="Type your e-mail address"
+              id="input-mail"
+            />
+            <label for="name">Title</label>
+            <input
+              type="text"
+              name="title"
+              placeholder="Type your title here"
+              id="input-title"
+            />
+            <label for="name">Message</label>
+            <input
+              type="text"
+              name="message"
+              placeholder="Type your message here..."
+              id="input-message"
+            />
+            <input type="submit" value="Submit" />
+          </form>
+      </section>
+    </main>
+
     
+    <form action="https://formspree.io/f/mpzvwkwa" method="post">
+        <input name="email" type="text" placeholder="newsletter" id="">
+        <input type="submit" value="Submit">
+    </form>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
