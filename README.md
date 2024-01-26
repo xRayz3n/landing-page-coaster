@@ -1,1 +1,1 @@
-SASS CMD : sass --watch sass/style.scss:style.css
+# Landing page for the Coaster Quickstarter project
