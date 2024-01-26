@@ -18,12 +18,14 @@ body {
 
 header{
     width: 100%;
+    position: fixed;
 }
 nav {
     padding: 1% 10%;
     width: 100%;
-    position: fixed;
     background-color: rgb(var(--brown));
+    display:flex;
+    justify-content: space-between;
 }
 
 .logo-asset {
@@ -61,8 +63,13 @@ h1 {
     font-weight: 300;
     font-size: 4rem;
 }
-
+.preorder {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 .button-preorder {
+    margin: 0 auto;
     border: 2px solid rgb(var(--beige)) ;
     color: rgb(var(--beige));
     padding: 1rem 2rem;
@@ -84,6 +91,7 @@ h1 {
 .about-us img {
     width:100%;
     height: 100%;
+    object-fit: cover;
 }
 .about-txt {
     background-color: rgb(var(--beige));
@@ -184,34 +192,23 @@ input::placeholder, textarea::placeholder {
     background-color: rgb(var(--beige));
     color: rgb(var(--brown));
 }
-.newsletter {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    width: 100%;
-}
-.newsletter h2 {
-    color: rgb(var(--beige));
-    font-weight: 500;
-}
-.newsletter form {
+.hero form {
     display:flex;
     width: 40%;
     justify-content: center;
     align-items: center;
 }
-.newsletter input[type=email] {
+.hero input[type=email] {
     width: 60%;
     border-right: none;
 }
-.newsletter input[type=submit] {
+.hero input[type=submit] {
     background-color: rgb(var(--beige));
     color: rgb(var(--brown));
     cursor: pointer;
     transition: all .2s ease-in-out;
 }
-.newsletter input[type=submit]:hover {
+.hero input[type=submit]:hover {
     background-color: rgb(var(--brown));
     color: rgb(var(--beige));
 
